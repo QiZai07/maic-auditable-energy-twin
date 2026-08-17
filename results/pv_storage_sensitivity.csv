@@ -1,0 +1,10 @@
+﻿strategy_id,grid_import_kwh,grid_cost_cny,pv_generation_kwh,battery_loss_kwh,curtailment_kwh,estimated_export_or_curtailment_kwh,battery_throughput_kwh,equivalent_full_cycles,self_sufficiency_pct,pv_self_consumption_pct,terminal_soc_kwh,storage_installed,result_type,pv_capacity_kwp,battery_capacity_kwh,method
+pv0.0_bat0.0,345676.69,185974.06,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,future_hypothetical,future_storage_screening,0.0,0.0,technical_screening
+pv0.0_bat150.0,349988.81,188293.98,0.0,4312.12,0.0,0.0,84141.69,280.47,-1.25,100.0,0.0,future_hypothetical,future_storage_screening,0.0,150.0,technical_screening
+pv0.0_bat300.0,354101.01,190506.34,0.0,8424.32,0.0,0.0,164382.28,273.97,-2.44,100.0,0.0,future_hypothetical,future_storage_screening,0.0,300.0,technical_screening
+pv106.14_bat0.0,250049.58,134526.68,120914.31,0.0,25287.2,25287.2,0.0,0.0,27.66,79.09,0.0,future_hypothetical,future_storage_screening,106.14,0.0,technical_screening
+pv106.14_bat150.0,246422.38,132575.24,120914.31,4945.91,16714.09,16714.09,96508.74,321.7,28.71,86.18,0.0,future_hypothetical,future_storage_screening,106.14,150.0,technical_screening
+pv106.14_bat300.0,246123.95,132414.69,120914.31,8630.74,12730.84,12730.84,168409.99,280.68,28.8,89.47,0.0,future_hypothetical,future_storage_screening,106.14,300.0,technical_screening
+pv150.0_bat0.0,231695.06,124651.94,170879.47,0.0,56897.84,56897.84,0.0,0.0,32.97,66.7,0.0,future_hypothetical,future_storage_screening,150.0,0.0,technical_screening
+pv150.0_bat150.0,226713.93,121972.1,170879.47,5089.33,46827.38,46827.38,99307.26,331.02,34.41,72.6,0.0,future_hypothetical,future_storage_screening,150.0,150.0,technical_screening
+pv150.0_bat300.0,224263.88,120653.97,170879.47,8580.15,40886.51,40886.51,167422.94,279.04,35.12,76.07,0.0,future_hypothetical,future_storage_screening,150.0,300.0,technical_screening

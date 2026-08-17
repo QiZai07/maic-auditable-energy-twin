@@ -1,0 +1,5 @@
+building_id,meter_name,meter_group,multiplier,annual_kwh,zero_increment_months,source_row
+BLD_REF,MTR-A,General loads,1,137430.2048,0,synthetic_public_record
+BLD_REF,MTR-B,General loads,1,107980.8752,0,synthetic_public_record
+BLD_REF,MTR-C,Rooftop HVAC,1,53140.7733,0,synthetic_public_record
+BLD_REF,MTR-D,Rooftop HVAC,1,47124.8367,0,synthetic_public_record

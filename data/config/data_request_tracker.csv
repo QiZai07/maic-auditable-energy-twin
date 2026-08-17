@@ -1,0 +1,11 @@
+priority,data_needed,current_status,practical_way_to_get_it,why_it_matters
+P0,Client 15-min/hourly electricity,Not included in public demo,Upload through the governed onboarding workspace,Calibrates load shape and peak demand
+P0,Operating schedule,Public demo assumption: 08:00-22:00,Confirm client timetable or access counts,Anchors occupied/off-hour allocation
+P0,Indoor temperature/RH/CO2,Not included,Deploy temporary sensors where authorized,Supports comfort-constrained measures
+P0,HVAC equipment and efficiency,Aggregate design basis only,Client asset register and field verification,Calibrates control and retrofit scenarios
+P0,PV hourly generation and import/export,Aggregate case values only,Authorized inverter and grid-meter export,Calibrates self-consumption
+P1,Local weather,Synthetic public profile,Approved local station or client sensors,Weather-normalizes the client period
+P1,Supplier quotations,Unavailable,Obtain client-specific quotations,Replaces screening CAPEX
+P1,Circuit-to-zone mapping,Generic public topology,Authorized single-line diagram and asset mapping,Supports system-level diagnosis
+P1,Roof structural capacity,Not assessed,Licensed structural engineer,Prevents unsafe PV expansion claims
+P2,Post-retrofit M&V data,Future,Documented baseline and reporting period,Verifies savings

@@ -1,0 +1,21 @@
+{
+  "selected_model_name": "Validated weekend-hour calendar shape prior",
+  "selection_reason": "The transparent calendar baseline was retained after comparison with the candidate regressor.",
+  "training_rows": 6432,
+  "validation_rows": 1608,
+  "selected_validation_mae_shape_index": 0.1436,
+  "selected_validation_nmae_pct_of_mean_shape": 14.36,
+  "ai_candidate_name": "HistGradientBoostingRegressor",
+  "ai_candidate_validation_mae_shape_index": 0.1998,
+  "ai_candidate_validation_r2": 0.077,
+  "calendar_baseline_mae_shape_index": 0.1436,
+  "mae_improvement_vs_calendar_baseline_pct": -39.2,
+  "ai_candidate_selected": false,
+  "target_definition": "synthetic hourly load divided by that day's mean load",
+  "scope": "Public demonstration validation on deterministic synthetic temporal shapes; not site-hourly accuracy.",
+  "features": [
+    "is_weekend",
+    "hour_numeric"
+  ],
+  "privacy_boundary": "No original, donor, client, or source rows are contained in this artifact."
+}

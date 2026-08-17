@@ -1,0 +1,4 @@
+strategy_id,grid_import_kwh,grid_cost_cny,pv_generation_kwh,battery_loss_kwh,curtailment_kwh,estimated_export_or_curtailment_kwh,battery_throughput_kwh,equivalent_full_cycles,self_sufficiency_pct,pv_self_consumption_pct,terminal_soc_kwh,storage_installed,result_type
+no_battery,230970.24,124261.99,126233.5,0.0,11527.05,11527.05,0.0,0.0,33.18,90.87,0.0,False,current_pv_monthly_measured_hourly_estimated
+naive_grid_charge,233924.17,125851.2,126233.5,8473.55,6007.43,6007.43,165342.79,275.57,32.33,95.24,0.0,future_hypothetical,future_storage_screening
+loss_aware_lp,224486.41,120773.69,126233.5,700.47,4342.75,4342.75,13668.14,22.78,35.06,96.56,0.0,future_hypothetical,future_storage_screening

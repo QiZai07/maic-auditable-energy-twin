@@ -1,0 +1,8 @@
+{
+  "solver": "scipy.optimize.linprog HiGHS",
+  "success": true,
+  "status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "objective_cny": 121047.05364950372,
+  "terminal_soc_kwh": 0.0
+}

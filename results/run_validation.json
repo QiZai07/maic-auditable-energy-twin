@@ -1,0 +1,7 @@
+{
+  "annual_total_matches_expected": true,
+  "hourly_monthly_reconciliation_failures": 0,
+  "lp_success": true,
+  "public_privacy_mode": true,
+  "row_level_data_class": "deterministic_synthetic"
+}

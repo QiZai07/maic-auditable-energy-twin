@@ -1,0 +1,8 @@
+TEAM ENERGEN AI - PROJECT IRENE
+MAIC NEXUS CHALLENGE 2026 - T1: AI FOR CLEAN ENERGY
+
+Irene is an auditable digital-twin energy decision platform for commercial buildings, campuses and industrial facilities. It combines governed client-file onboarding, a confirmation gate, deterministic baseline calculations, efficiency and ROI screening, PV and future-storage simulation, evidence lineage and an optional model-assisted analysis agent.
+
+The public repository uses an anonymized Ningbo reference case. Approved aggregate outputs include 345,676.69 kWh/year of electricity, 29.01% HVAC share, 106.14 kWp PV and 126,233.50 kWh annual PV generation. All checked-in row-level meter, weather, load, PV and comfort records are deterministic synthetic demonstrations. Original institutional and client data are excluded.
+
+The combined P50 screening package saves 41,581.69 kWh/year under stated assumptions. The Malaysia carbon result is parameterized, not a local field validation. Malaysia deployment remains pending a local pilot with authorized client data, calibration and M&V.

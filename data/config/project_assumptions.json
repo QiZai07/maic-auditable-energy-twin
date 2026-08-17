@@ -1,0 +1,121 @@
+{
+  "model_version": "Irene Auditable Digital Twin",
+  "generated_at": "2026-08-17T00:00:00+08:00",
+  "public_data_mode": "deterministic_synthetic_reconstruction_from_approved_aggregates",
+  "building": {
+    "building_id": "BLD_REF",
+    "official_name": "Ningbo Reference Building",
+    "short_name": "NRB",
+    "source_alias": "Reference Building A",
+    "institution": "Anonymized Ningbo Campus",
+    "city": "Ningbo",
+    "country": "China",
+    "target_market": "Malaysia",
+    "gross_floor_area_m2": 6231.26,
+    "floor_count": 3,
+    "floor_areas_m2": {
+      "1F": 2047.88,
+      "2F": 2091.69,
+      "3F": 2091.69
+    },
+    "identity_status": "anonymized_public_reference_case"
+  },
+  "tariff": {
+    "value": 0.538,
+    "currency": "CNY",
+    "unit": "CNY/kWh",
+    "tax_included": true,
+    "billing_structure": "single_flat_energy_rate",
+    "billing_formula": "bill_cny = electricity_kwh * 0.538",
+    "time_of_use_charge": false,
+    "demand_charge": false,
+    "other_charge_components": false,
+    "status": "Ningbo_reference_case_parameter"
+  },
+  "maic_emission_factor": {
+    "value_kgco2e_per_kwh": 0.74,
+    "boundary": "Malaysia deployment scenario only",
+    "status": "competition_scenario_assumption"
+  },
+  "comfort_assumption": {
+    "status": "public_demo_model_assumption",
+    "scope": "occupied spaces during 08:00-22:00 opening hours",
+    "cooling_target_c": 25.0,
+    "heating_target_c": 20.0,
+    "acceptable_temperature_band_c": [
+      20.0,
+      26.0
+    ],
+    "relative_humidity_band_pct": [
+      40.0,
+      60.0
+    ],
+    "co2_upper_limit_ppm": 1000.0,
+    "evidence_boundary": "synthetic comfort proxy; no historical indoor sensor records"
+  },
+  "hvac_design_basis": {
+    "source": "Anonymized reference design basis; source drawing excluded",
+    "outdoor_unit_count": 18,
+    "indoor_unit_count": 80,
+    "rated_cooling_capacity_kw": 952.0,
+    "rated_heating_capacity_kw": 1066.0,
+    "rated_input_power_kw": 265.0,
+    "rated_cooling_eer": 3.5925,
+    "rated_heating_cop": 4.0226,
+    "fresh_air_fan_power_kw": 6.0,
+    "general_exhaust_fan_power_kw": 4.1,
+    "status": "approved_aggregate_design_basis_not_current_measurement"
+  },
+  "current_energy_system": {
+    "pv": {
+      "installed": true,
+      "grid_connection_point": "Reference grid connection point",
+      "capacity_kwp": 106.14,
+      "inverter_capacity_kw": 110.0,
+      "module_count": 183,
+      "module_power_wp": 580.0,
+      "storage_installed": false,
+      "status": "approved_aggregate_reference_case"
+    },
+    "storage": {
+      "installed": false,
+      "status": "approved_aggregate_reference_case"
+    }
+  },
+  "hourly_estimation": {
+    "method": "deterministic synthetic profile constrained to approved monthly aggregates",
+    "weekday_open_hours": "08:00-22:00",
+    "weekend_open_hours": "08:00-22:00",
+    "opening_hours_status": "public_demo_assumption",
+    "occupancy_density_status": "synthetic proxy; not measured",
+    "uncertainty_range": "P10/P50/P90 = 0.75/1.00/1.25 of screening savings"
+  },
+  "scenario_assumptions": {
+    "lighting_share_of_non_hvac": 0.32,
+    "led_reduction": 0.25,
+    "plug_share_of_non_hvac": 0.28,
+    "off_hour_hvac_reduction": 0.35,
+    "capex_currency": "CNY",
+    "capex_status": "screening assumptions; supplier quotes required"
+  },
+  "future_storage_sandbox": {
+    "uses_existing_pv_capacity_kwp": 106.14,
+    "pv_capacity_status": "approved aggregate capacity; synthetic hourly shape is monthly constrained",
+    "reference_system_kwp": 61.2,
+    "battery": {
+      "capacity_kwh": 300.0,
+      "power_kw": 120.0,
+      "charge_efficiency": 0.95,
+      "discharge_efficiency": 0.95,
+      "degradation_cny_per_kwh_throughput": 0.02,
+      "status": "future hypothetical technical sandbox; no battery is installed"
+    }
+  },
+  "evidence_labels": [
+    "approved_aggregate",
+    "derived",
+    "assumed",
+    "synthetic_public_demo",
+    "missing"
+  ]
+}

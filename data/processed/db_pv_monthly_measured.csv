@@ -1,0 +1,13 @@
+month,pv_generation_kwh,pv_capacity_kwp,specific_yield_kwh_per_kwp,quality_flag,evidence_type
+2024-07,13752.0,106.14,129.5647258338044,aggregate_reference_month,approved_aggregate_case_result
+2024-08,18682.8,106.14,176.02035048049746,aggregate_reference_month,approved_aggregate_case_result
+2024-09,10153.2,106.14,95.65856416054268,aggregate_reference_month,approved_aggregate_case_result
+2024-10,7360.8,106.14,69.34991520633126,aggregate_reference_month,approved_aggregate_case_result
+2024-11,6981.6,106.14,65.77727529677784,aggregate_reference_month,approved_aggregate_case_result
+2024-12,6331.2,106.14,59.64951950254381,aggregate_reference_month,approved_aggregate_case_result
+2025-01,77.5,106.14,0.730167703033729,aggregate_case_anomaly,approved_aggregate_case_result
+2025-02,9992.4,106.14,94.14358394573205,aggregate_reference_month,approved_aggregate_case_result
+2025-03,11502.0,106.14,108.36630864895422,aggregate_reference_month,approved_aggregate_case_result
+2025-04,14160.0,106.14,133.4087054833239,aggregate_reference_month,approved_aggregate_case_result
+2025-05,13320.0,106.14,125.49462973431316,aggregate_reference_month,approved_aggregate_case_result
+2025-06,13920.0,106.14,131.14754098360655,aggregate_reference_month,approved_aggregate_case_result

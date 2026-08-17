@@ -1,0 +1,12 @@
+{
+  "public_release": true,
+  "case_identity": "anonymized",
+  "data_mode": "synthetic row-level records constrained to approved aggregate outputs",
+  "excluded": [
+    "original meter rows",
+    "private weather records",
+    "donor records",
+    "drawings",
+    "source filenames and fingerprints"
+  ]
+}

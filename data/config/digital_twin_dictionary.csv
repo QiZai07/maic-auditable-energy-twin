@@ -1,0 +1,15 @@
+entity_id,entity_level,parent_id,entity_name,entity_type,evidence_level,source,known_fields,missing_fields,notes
+BLD_REF,building,,Ningbo Reference Building,physical_building,approved_aggregate,Public case summary,anonymized 3-floor reference; 6231.26 m2,measured occupancy density,Original identity withheld
+FLR_REF_01,floor,BLD_REF,Reference 1F,floor,approved_aggregate,Public case summary,2047.88 m2,zone functions and occupancy,Anonymized
+FLR_REF_02,floor,BLD_REF,Reference 2F,floor,approved_aggregate,Public case summary,2091.69 m2,zone functions and occupancy,Anonymized
+FLR_REF_03,floor,BLD_REF,Reference 3F,floor,approved_aggregate,Public case summary,2091.69 m2,zone functions and occupancy,Anonymized
+SYS_REF_ELEC,system,BLD_REF,Reference metering system,electrical_system,synthetic_public_demo,Synthetic public dataset,four generic monthly series,circuit topology and hourly logger,No original meter identifiers
+MTR_REF_A,meter,SYS_REF_ELEC,MTR-A,non_hvac_meter,synthetic_public_demo,Synthetic public dataset,monthly kWh,end-use mapping,Generated record
+MTR_REF_B,meter,SYS_REF_ELEC,MTR-B,non_hvac_meter,synthetic_public_demo,Synthetic public dataset,monthly kWh,end-use mapping,Generated record
+MTR_REF_C,meter,SYS_REF_ELEC,MTR-C,hvac_meter,synthetic_public_demo,Synthetic public dataset,monthly kWh,equipment mapping,Generated record
+MTR_REF_D,meter,SYS_REF_ELEC,MTR-D,hvac_meter,synthetic_public_demo,Synthetic public dataset,monthly kWh,equipment mapping,Generated record
+MODEL_REF_HOURLY,model,BLD_REF,Monthly-constrained hourly estimator,analytical_model,derived,Synthetic calendar/weather profiles,8760-hour profile,site hourly validation,Not measured hourly data
+SYS_REF_PV,system,BLD_REF,Reference rooftop PV,pv_system,approved_aggregate,Public case summary,106.14 kWp and aggregate monthly generation,hourly inverter registers,Hourly series is synthetic
+SYS_REF_BAT,system,BLD_REF,Battery storage,storage_system,approved_aggregate,Public case summary,no storage installed,future design only,Dispatch is a future sandbox
+MODEL_REF_COMFORT,model,BLD_REF,Comfort proxy,indoor_environment_model,assumed,Public demo assumptions,occupied-hour proxy,historical indoor sensors,"Synthetic, never measured"
+MODEL_REF_OPT,model,BLD_REF,Loss-aware LP dispatcher,optimization_model,sandbox,Synthetic load and PV profiles,energy balance and terminal SOC,field controls,Future screening only

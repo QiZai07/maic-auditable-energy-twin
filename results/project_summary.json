@@ -1,0 +1,182 @@
+{
+  "model_version": "Irene Auditable Digital Twin",
+  "real_case": {
+    "building_id": "BLD_REF",
+    "official_name": "Ningbo Reference Building",
+    "short_name": "NRB",
+    "source_alias": "Reference Building A",
+    "institution": "Anonymized Ningbo Campus",
+    "city": "Ningbo",
+    "country": "China",
+    "target_market": "Malaysia",
+    "gross_floor_area_m2": 6231.26,
+    "floor_count": 3,
+    "floor_areas_m2": {
+      "1F": 2047.88,
+      "2F": 2091.69,
+      "3F": 2091.69
+    },
+    "identity_status": "anonymized_public_reference_case"
+  },
+  "annual_total_kwh": 345676.69,
+  "annual_hvac_kwh": 100265.61,
+  "annual_non_hvac_kwh": 245411.08,
+  "hvac_share_pct": 29.01,
+  "annual_eui_kwh_m2": 55.47,
+  "hvac_eui_kwh_m2": 16.09,
+  "tariff": {
+    "value": 0.538,
+    "currency": "CNY",
+    "unit": "CNY/kWh",
+    "tax_included": true,
+    "billing_structure": "single_flat_energy_rate",
+    "billing_formula": "bill_cny = electricity_kwh * 0.538",
+    "time_of_use_charge": false,
+    "demand_charge": false,
+    "other_charge_components": false,
+    "status": "Ningbo_reference_case_parameter"
+  },
+  "estimated_annual_bill_cny": 185974.06,
+  "calculated_annual_bill_cny": 185974.06,
+  "opening_hours": {
+    "daily": "08:00-22:00",
+    "status": "user_confirmed_model_assumption_2026-08-10"
+  },
+  "comfort_assumption": {
+    "status": "public_demo_model_assumption",
+    "scope": "occupied spaces during 08:00-22:00 opening hours",
+    "cooling_target_c": 25.0,
+    "heating_target_c": 20.0,
+    "acceptable_temperature_band_c": [
+      20.0,
+      26.0
+    ],
+    "relative_humidity_band_pct": [
+      40.0,
+      60.0
+    ],
+    "co2_upper_limit_ppm": 1000.0,
+    "evidence_boundary": "synthetic comfort proxy; no historical indoor sensor records"
+  },
+  "hvac_design_basis": {
+    "source": "Anonymized reference design basis; source drawing excluded",
+    "outdoor_unit_count": 18,
+    "indoor_unit_count": 80,
+    "rated_cooling_capacity_kw": 952.0,
+    "rated_heating_capacity_kw": 1066.0,
+    "rated_input_power_kw": 265.0,
+    "rated_cooling_eer": 3.5925,
+    "rated_heating_cop": 4.0226,
+    "fresh_air_fan_power_kw": 6.0,
+    "general_exhaust_fan_power_kw": 4.1,
+    "status": "approved_aggregate_design_basis_not_current_measurement"
+  },
+  "current_pv_system": {
+    "installed": true,
+    "grid_connection_point": "Reference grid connection point",
+    "capacity_kwp": 106.14,
+    "inverter_capacity_kw": 110.0,
+    "module_count": 183,
+    "module_power_wp": 580.0,
+    "storage_installed": false,
+    "status": "approved_aggregate_reference_case",
+    "annual_generation_kwh": 126233.5,
+    "estimated_grid_import_kwh": 250975.85,
+    "estimated_self_sufficiency_pct": 27.4,
+    "estimated_self_consumption_pct": 75.02,
+    "estimated_export_or_curtailment_kwh": 31532.66,
+    "metering_boundary": "Public hourly values are synthetic; use authorized client data for deployment calibration.",
+    "january_2025_fault_counterfactual": {
+      "month": "2025-01",
+      "measured_fault_generation_kwh": 77.5,
+      "estimated_no_fault_generation_kwh": 12402.39,
+      "estimated_generation_loss_kwh": 12324.89,
+      "method": "Synthetic reference shape constrained to approved aggregate months",
+      "result_type": "counterfactual_estimate_not_measured"
+    }
+  },
+  "recalibrated_combo_scenario": {
+    "scenario_id": "combo_package",
+    "scenario_name": "Combined package (HVAC + LED + operations)",
+    "scenario_type": "portfolio",
+    "annual_baseline_kwh": 345676.69,
+    "annual_saved_kwh_p10": 31186.27,
+    "annual_saved_kwh_p50": 41581.69,
+    "annual_saved_kwh_p90": 51977.11,
+    "uncertainty_method": "engineering_screening_multipliers_0.75_1.00_1.25",
+    "uncertainty_calibration_status": "not_calibrated_as_statistical_quantiles",
+    "saving_rate_pct_p50": 12.03,
+    "annual_saving_cny_p10": 16778.21,
+    "annual_saving_cny_p50": 22370.95,
+    "annual_saving_cny_p90": 27963.69,
+    "capex_cny_assumption": 62000,
+    "capex_status": "screening_assumption_needs_supplier_quote",
+    "simple_payback_years_p50": 2.77,
+    "avoided_tco2e_maic_p50": 30.77,
+    "carbon_boundary": "Malaysia deployment scenario only",
+    "result_type": "screening_estimate_with_uncertainty"
+  },
+  "donor_profile_validation": {
+    "selected_model_name": "Validated weekend-hour calendar shape prior",
+    "selection_reason": "The transparent calendar baseline was retained after comparison with the candidate regressor.",
+    "training_rows": 6432,
+    "validation_rows": 1608,
+    "selected_validation_mae_shape_index": 0.1436,
+    "selected_validation_nmae_pct_of_mean_shape": 14.36,
+    "ai_candidate_name": "HistGradientBoostingRegressor",
+    "ai_candidate_validation_mae_shape_index": 0.1998,
+    "ai_candidate_validation_r2": 0.077,
+    "calendar_baseline_mae_shape_index": 0.1436,
+    "mae_improvement_vs_calendar_baseline_pct": -39.2,
+    "ai_candidate_selected": false,
+    "target_definition": "synthetic hourly load divided by that day's mean load",
+    "scope": "Public demonstration validation on deterministic synthetic temporal shapes; not site-hourly accuracy.",
+    "features": [
+      "is_weekend",
+      "hour_numeric"
+    ],
+    "privacy_boundary": "No original, donor, client, or source rows are contained in this artifact."
+  },
+  "loss_aware_comparison": {
+    "loss_aware_lp": {
+      "grid_import_kwh": 224486.41,
+      "grid_cost_cny": 120773.69,
+      "pv_generation_kwh": 126233.5,
+      "battery_loss_kwh": 700.47,
+      "curtailment_kwh": 4342.75,
+      "estimated_export_or_curtailment_kwh": 4342.75,
+      "battery_throughput_kwh": 13668.14,
+      "equivalent_full_cycles": 22.78,
+      "self_sufficiency_pct": 35.06,
+      "pv_self_consumption_pct": 96.56,
+      "terminal_soc_kwh": 0.0,
+      "storage_installed": "future_hypothetical",
+      "result_type": "future_storage_screening"
+    },
+    "naive_grid_charge": {
+      "grid_import_kwh": 233924.17,
+      "grid_cost_cny": 125851.2,
+      "pv_generation_kwh": 126233.5,
+      "battery_loss_kwh": 8473.55,
+      "curtailment_kwh": 6007.43,
+      "estimated_export_or_curtailment_kwh": 6007.43,
+      "battery_throughput_kwh": 165342.79,
+      "equivalent_full_cycles": 275.57,
+      "self_sufficiency_pct": 32.33,
+      "pv_self_consumption_pct": 95.24,
+      "terminal_soc_kwh": 0.0,
+      "storage_installed": "future_hypothetical",
+      "result_type": "future_storage_screening"
+    },
+    "grid_import_reduction_vs_naive_pct": 4.03,
+    "battery_loss_reduction_vs_naive_pct": 91.73
+  },
+  "scope_boundary": [
+    "Approved aggregates: annual/monthly energy, PV and screening outputs selected for public display.",
+    "Synthetic public demo: row-level meter, weather, load, PV and comfort series.",
+    "Excluded: original files, private rows, donor records, drawings, filenames and source fingerprints.",
+    "Deployment boundary: client analysis requires authorized client data and local validation."
+  ],
+  "project_name": "AI-assisted Auditable Digital Twin Energy Management Platform for Malaysian Buildings and Campuses",
+  "public_data_notice": "All public row-level records are deterministic synthetic demonstrations constrained to approved aggregate case outputs."
+}

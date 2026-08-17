@@ -1,0 +1,44 @@
+# Secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node and Vercel
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+
+# Private inputs and local output
+data/private_inputs/
+data/raw/
+data/source/
+data/training_private/
+data/client_uploads/
+data/processed/donor_*
+data/processed/weather_*.csv
+data/processed/*_by_meter.csv
+**/*original*data*
+logs/
+tmp/
+*.log
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

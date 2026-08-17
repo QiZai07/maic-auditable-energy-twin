@@ -1,0 +1,4 @@
+Timestamp,Meter ID,Electricity kWh,Demand kW,Outdoor Temperature C
+2026-01-01 00:00,MTR-001,12.40,4.20,30.0
+2026-01-01 01:00,MTR-001,13.10,4.60,29.5
+2026-01-01 02:00,MTR-001,12.80,4.40,29.0
