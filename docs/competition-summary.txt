@@ -1,8 +1,24 @@
-TEAM ENERGEN AI - PROJECT IRENE
-MAIC NEXUS CHALLENGE 2026 - T1: AI FOR CLEAN ENERGY
+AI-ASSISTED AUDITABLE DIGITAL TWIN FOR BUILDING ENERGY DECISIONS
+TEAM ENERGEN AI · PROJECT IRENE
+MAIC NEXUS CHALLENGE 2026 · T1 — AI FOR CLEAN ENERGY
 
-Irene is an auditable digital-twin energy decision platform for commercial buildings, campuses and industrial facilities. It combines governed client-file onboarding, a confirmation gate, deterministic baseline calculations, efficiency and ROI screening, PV and future-storage simulation, evidence lineage and an optional model-assisted analysis agent.
+Buildings often have meters, equipment schedules, drawings and utility records but still lack a defensible way to decide what to change, how much it may save and whether an investment is justified. Irene turns client-owned files into an auditable decision chain covering energy, cost, carbon, efficiency, photovoltaic generation and future storage. A human confirmation gate prevents unreviewed values from entering the calculation layer, while deterministic methods keep every result reproducible and traceable.
 
-The public repository uses an anonymized Ningbo reference case. Approved aggregate outputs include 345,676.69 kWh/year of electricity, 29.01% HVAC share, 106.14 kWp PV and 126,233.50 kWh annual PV generation. All checked-in row-level meter, weather, load, PV and comfort records are deterministic synthetic demonstrations. Original institutional and client data are excluded.
+The public demonstration uses an anonymized Ningbo reference case. Approved aggregate evidence includes 345,676.69 kWh/year of electricity, a 29.01% HVAC share, a gross floor area of 6,231.26 m², 106.14 kWp of installed photovoltaic capacity and 126,233.50 kWh of annual PV generation. Original institutional meter rows, private weather records, drawings, donor records and client uploads are excluded from the public repository. Checked-in row-level load, weather, PV and comfort profiles are deterministic synthetic demonstration records constrained to the approved aggregate results.
 
-The combined P50 screening package saves 41,581.69 kWh/year under stated assumptions. The Malaysia carbon result is parameterized, not a local field validation. Malaysia deployment remains pending a local pilot with authorized client data, calibration and M&V.
+Irene provides eight connected modules: project overview, monthly evidence, hourly evidence, efficiency and ROI, PV and future storage, digital-twin evidence, analysis agent, and client data onboarding. CSV, Excel, PDF, Word, image, DXF, IFC and DWG inputs can enter a session-only review workflow. Confirmed tables can be consolidated into an energy baseline and a privacy-safe delivery pack containing mappings, quality records, evidence lineage and an audit log without redistributing raw client uploads.
+
+The combined screening package—HVAC optimisation, operating-hour control, LED retrofit and plug-load management—estimates P10/P50/P90 savings of 31,186.27, 41,581.69 and 51,977.11 kWh/year under stated engineering assumptions. At the Ningbo reference tariff of CNY 0.538/kWh, the P50 case corresponds to CNY 22,370.95/year and a 2.77-year simple payback. The 30.77 tCO₂e/year figure is a parameterized Malaysia carbon scenario, not a Malaysian field result. No battery is currently installed; a separate 300 kWh/120 kW sandbox evaluates future loss-aware dispatch.
+
+The first paid product is a file-based energy diagnosis with a confirmed baseline, auditable report and action shortlist for commercial buildings, campuses, industrial parks and energy service companies. Revenue can combine a one-off diagnosis fee, annual subscription, and implementation plus measurement-and-verification services. The pilot pathway is file audit, temporary metering, calibration, savings verification and multi-site expansion.
+
+Irene is validated on a Ningbo reference case and designed for configurable deployment in Malaysia, pending local pilot validation with authorized client data.
+
+Public repository and runnable Streamlit application:
+https://github.com/QiZai07/maic-auditable-energy-twin
+
+Final technical architecture in the GitHub repository:
+https://github.com/QiZai07/maic-auditable-energy-twin/blob/main/docs/MAIC_Technical_Architecture.pdf
+
+Live Vercel demonstration:
+https://irene-flax.vercel.app/
