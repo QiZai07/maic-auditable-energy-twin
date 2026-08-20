@@ -30,6 +30,16 @@ The battery analysis is a future 300 kWh / 120 kW technical sandbox. It is not p
 
 The 30.77 tCO₂e combined-case value is a parameterized Malaysia carbon scenario assumption, not a Malaysia field result.
 
+## Irene and general-purpose ChatGPT
+
+ChatGPT contributes general-purpose language reasoning. Irene adds the governed project layer: approved building evidence, nine deterministic energy tools, evidence classes, human approval gates, reproducible calculations, local fallback and an auditable delivery pack. In enhanced agent mode, Irene sends the question, recent user questions and deterministic tool summaries rather than raw files or unconfirmed client rows. Core analysis remains available without an external model.
+
+## Compatibility with existing client systems
+
+Irene is designed to sit alongside a client's existing BMS, EMS, meter platform, ERP, inverter portal and document repositories rather than replace them. The implemented entry route accepts CSV, Excel, PDF/image and BIM/CAD files plus read-only exports. Source fields, units, time zones and meter hierarchies are mapped to a canonical Irene data contract and confirmed by a reviewer before analysis.
+
+For production deployments, read-only API, SQL-view, SFTP or site-gateway connectors are configured to the client's systems and security rules. Migration is staged: inventory data sources → map and backfill history → reconcile totals → run Irene in parallel → obtain client approval for cutover. Incremental synchronisation, source fingerprints and rollback checkpoints preserve traceability. These live connectors are project integrations, not claimed as preconfigured in the public prototype.
+
 ## Commercial pathway
 
 - **Target customers:** commercial buildings, campuses, industrial parks and energy service companies (ESCOs).

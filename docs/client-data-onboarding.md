@@ -1,6 +1,6 @@
 # Client Data Onboarding
 
-Irene supports a controlled route from client-owned evidence to a client-specific energy model. The existing Lord Dearing Building dataset remains a demonstration case; a client upload never inherits its absolute energy values, equipment capacities or operating assumptions.
+Irene supports a controlled route from client-owned evidence to a client-specific energy model. The anonymized Ningbo reference case remains a demonstration case; a client upload never inherits its absolute energy values, equipment capacities or operating assumptions.
 
 ## Operating principle
 
@@ -44,6 +44,21 @@ The downloadable ZIP contains:
 - `README.txt` — review and interpretation instructions.
 
 Raw source files and raw table rows are deliberately excluded. The file fingerprint allows the client-controlled source to be reconciled later without publishing it.
+
+## Existing-system compatibility and migration
+
+Irene does not require a rip-and-replace deployment. A client can begin with files or read-only exports from its BMS, EMS, meter platform, ERP, inverter portal or document store. Irene maps source fields, units, time zones and meter hierarchies to its canonical data contract, while the source system remains the system of record during the pilot.
+
+The production migration path is:
+
+1. inventory systems, owners, formats, history and access rules;
+2. map fields and units, then obtain reviewer approval;
+3. backfill the agreed historical period;
+4. reconcile energy, cost and asset totals against the source system;
+5. run in shadow mode with incremental synchronisation and exception logs;
+6. cut over only after client approval, retaining rollback checkpoints and the original source archive.
+
+Current public functionality covers file intake, mapping, quality control, confirmation and the audit pack. Read-only API, SQL-view, SFTP and site-gateway connectors are configured and validated per client; universal vendor-protocol support is not claimed.
 
 ## Phase 1 — structured operational data
 

@@ -512,7 +512,8 @@ function Agent() {
         </section>
       </aside>
     </div>
-    <Notice tone="warning" title="Hybrid Agent safety boundary">Local mode is fully offline. Enhanced mode lets OpenAI select and combine project tools, while deterministic tools still produce every number. Neither mode connects to or controls the BMS or makes procurement commitments. Facilities personnel must review procurement and equipment actions.</Notice>
+    <Notice tone="warning" title="Why Irene is not general-purpose ChatGPT">ChatGPT contributes general-purpose language reasoning. Irene supplies approved project evidence, nine deterministic tools, evidence classes, approval gates, traceable calculations, local fallback and the audit pack. Enhanced mode sends questions and tool summaries, not raw files or unconfirmed rows. Neither mode controls the BMS or makes procurement commitments.</Notice>
+    <Notice tone="info" title="Works with the systems clients already use">Irene can begin with files and read-only exports while existing BMS, EMS, meter, ERP or PV platforms remain the systems of record. Data is mapped and reconciled before a shadow run and client-approved cutover. Production API, SQL-view, SFTP or gateway connectors are configured and validated per client; universal vendor connectors are not claimed.</Notice>
   </>;
 }
 

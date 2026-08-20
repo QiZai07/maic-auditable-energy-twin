@@ -27,9 +27,13 @@ OPENAI_API_KEY=your_key_here
 
 The key is read only by server routes. The browser can query whether enhanced analysis is configured, but no status response contains the key. Module 08 uses the same server credential for optional PDF/image recognition only after the user grants permission for that selected file. Recognition requests use `store: false`; local CSV, Excel, Word, DXF and IFC parsing does not call the provider.
 
+Enhanced agent mode sends the question, the six most recent user questions and deterministic tool summaries rather than raw client files or unconfirmed rows. ChatGPT provides general-purpose language reasoning; Irene supplies approved project evidence, nine deterministic tools, evidence labels, approval gates, local fallback and the auditable delivery workflow. OpenAI API data is not used for training by default, although standard abuse-monitoring logs may be retained for up to 30 days. `store: false` is not the same as Zero Data Retention.
+
 ## Client data onboarding
 
 Module 08 supports local CSV and Excel mapping, quality checks and readiness scoring; local PDF/Word fact review; explicit optional PDF/image recognition; local DXF and IFC structure review; and a clear DXF/converter gate for native DWG. After review, confirmed tables can be consolidated into a reporting-period energy, cost, emissions and EUI analysis. The downloadable ZIP contains project results, monthly baseline, mapping and quality registers, source fingerprints and an audit log. It excludes raw client rows and files. No uploaded client file is written into the public repository.
+
+Irene can be introduced without replacing the client's BMS, EMS, metering, ERP or PV platforms. The working prototype starts with files and read-only exports, maps them to a confirmed data contract and keeps the original platform as the system of record. Production API, SQL-view, SFTP or site-gateway connectors are configured per client. The migration sequence is inventory → mapping → historical backfill → reconciliation → shadow run → client-approved cutover, with incremental synchronisation and rollback checkpoints. Prebuilt universal vendor connectors are not claimed.
 
 ## Verification
 
