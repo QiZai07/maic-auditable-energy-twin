@@ -6,6 +6,27 @@
 
 Validated on a Ningbo reference case; designed for configurable deployment in Malaysia, pending local pilot validation.
 
+## Definitions and glossary
+
+| Term | Definition in Irene |
+| --- | --- |
+| Irene | A governed energy-intelligence system that combines deterministic analysis with an optional model-assisted language layer. |
+| Energy digital twin | A traceable representation linking buildings, zones, systems, assets, meters, operating conditions and the evidence behind each value. |
+| Deterministic analysis | Rules, formulas and optimisation routines that return the same result from the same confirmed inputs. These routines—not a language model—calculate project values. |
+| Local-first | Core ingestion, validation and analysis can run without sending raw client files to a cloud model. |
+| Optional cloud enhancement | Consent-based server support for natural-language orchestration and selected document recognition. It is not required for core calculations. |
+| Evidence class | A label identifying whether a value is measured, documented, assumed, modelled or synthetic. |
+| Human confirmation gate | Reviewer approval required before mapped fields or extracted facts enter a client-specific model. |
+| Canonical data contract | Irene's standard structure for units, timestamps, time zones, meter hierarchy and source identity, used to integrate different client systems. |
+| Loss-aware dispatch | Battery optimisation that accounts for conversion losses, operating constraints and terminal state of charge. |
+| Shadow run | A migration stage in which Irene and the client's original system operate in parallel before approved cutover. |
+| EUI | Energy use intensity: energy consumption normalised by floor area. |
+| M&V | Measurement and verification of realised energy savings. |
+| BESS | Battery energy storage system. |
+| SOC | State of charge of a battery. |
+| NMAE | Normalised mean absolute error, used here to assess reference-profile shape. |
+| P10 / P50 / P90 | Low, central and high scenario cases used to communicate uncertainty rather than a guaranteed outcome. |
+
 ## System flow
 
 ```mermaid
